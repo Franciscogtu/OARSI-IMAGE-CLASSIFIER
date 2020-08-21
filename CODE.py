@@ -1,4 +1,20 @@
- 
+ #importing other required libraries
+import numpy as np
+import pandas as pd
+from sklearn.utils.multiclass import unique_labels
+import os
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import seaborn as sns
+import itertools
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix
+from keras import Sequential
+from keras.preprocessing.image import ImageDataGenerator
+from keras.optimizers import SGD,Adam
+from keras.callbacks import ReduceLROnPlateau
+from keras.layers import Flatten,Dense,BatchNormalization,Activation,Dropout
+from keras.utils import to_categorical
  #DATA PROCESSING
  
 Input_shape = (224, 224, 3)
